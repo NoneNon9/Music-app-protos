@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package playlist;
 
-
+option go_package = "github.com/NoneNon9/Music-app-protos/playlist"
 // ── Common models ─────────────────────────────────────────────────────────────
 
 message PlaylistSong {
