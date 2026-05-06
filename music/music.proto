@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package music;
 
-option go_package = "github.com/music-app/music-service/gen/music;music";
+option go_package = "github.com/NoneNon9/Music-app-protos/music;music";
 
 // ── Common models ─────────────────────────────────────────────────────────────
 
