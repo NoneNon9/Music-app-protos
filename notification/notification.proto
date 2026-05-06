@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package notification;
 
-option go_package = "github.com/music-app/notification-service/gen/notification;notification";
+option go_package = "github.com/NoneNon9/Music-app-protos/notification;notification";
 
 // ── Messages ──────────────────────────────────────────────────────────────────
 
