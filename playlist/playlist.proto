@@ -68,6 +68,15 @@ message RemoveSongRequest {
 message RemoveSongResponse {
   bool success = 1;
 }
+message AddCollaboratorRequest {
+    string playlist_id = 1;
+    string owner_id = 2; 
+    string collaborator_id = 3;
+}
+
+message AddCollaboratorResponse {
+    bool success = 1;
+}
 
 // ── Service ───────────────────────────────────────────────────────────────────
 
@@ -82,4 +91,6 @@ service PlaylistService {
   rpc AddSongToPlaylist(AddSongRequest) returns (AddSongResponse);
   // endpoint 16
   rpc RemoveSongFromPlaylist(RemoveSongRequest) returns (RemoveSongResponse);
+  
+  rpc AddCollaborator(AddCollaboratorRequest) returns (AddCollaboratorResponse);
 }
